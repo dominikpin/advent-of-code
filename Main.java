@@ -11,13 +11,13 @@ public class Main {
         String formattedDay = day.length() == 1 ? "0" + day : day;
         String star = args[2];
 
-        String className = "year" + year + ".day" + day + ".Part" + star;
+        String className = "year" + year + ".day" + formattedDay + ".Part" + star;
 
         try {
             Class<?> partClass = Class.forName(className);
             partClass.getDeclaredConstructor().newInstance();
         } catch (ReflectiveOperationException e) {
-            System.err.printf("year %s, day %s, problem %s not found.\n", year, formattedDay, star);
+            System.err.printf("year %s, day %s, problem %s not found.\n", year, day, star);
             System.err.println(e);
             e.printStackTrace();
         }
