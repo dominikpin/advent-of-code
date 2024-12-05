@@ -11,7 +11,7 @@ public class Part1 {
         Scanner myReader = new Scanner(myObj);
         String line = myReader.nextLine();
         myReader.close();
-        System.out.println(lookAndSay("1", 50).length());
+        System.out.println(lookAndSay(line, 50).length());
     }
 
     private static String lookAndSay(String startingString, int numberOfTimes) {
