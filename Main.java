@@ -1,5 +1,3 @@
-import java.io.File;
-
 public class Main {
     public static void main(String[] args) {
         if (args.length != 3) {
@@ -18,8 +16,6 @@ public class Main {
             Class<?> partClass = Class.forName(yearPath + ".day" + formattedDay + ".Part" + star);
             partClass.getDeclaredConstructor().newInstance();
         } catch (ReflectiveOperationException e) {
-            System.err.printf("year %s, day %s, problem %s not found.\n", year, day, star);
-            System.err.println(e);
             e.printStackTrace();
         }
     }

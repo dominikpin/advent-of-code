@@ -2,6 +2,7 @@ package year2015.day10;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Part2 {
@@ -19,23 +20,23 @@ public class Part2 {
         while (j < numberOfTimes) {
             j++;
             int i = 0;
-            String newString = "";
+            ArrayList<String> allStrings = new ArrayList<>();
             char lastChar = startingString.charAt(i);
             int counter = 0;
             while (i < startingString.length()) {
                 if (startingString.charAt(i) == lastChar) {
                     counter++;
                 } else {
-                    newString += counter + "" + lastChar;
+                    allStrings.add(counter + "" + lastChar);
                     lastChar = startingString.charAt(i);
                     counter = 1;
                 }
                 if (i + 1 == startingString.length()) {
-                    newString += counter + "" + lastChar;
+                    allStrings.add(counter + "" + lastChar);
                 }
                 i++;
             }
-            startingString = newString;
+            startingString = String.join("", allStrings);
         }
         return startingString;
     }

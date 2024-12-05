@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "args": [
+                "2015",
+                "10",
+                "2"
+            ],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

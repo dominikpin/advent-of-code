@@ -36,8 +36,8 @@ Option 2:
 Once Java jdk is setup, go to the root of project and open the terminal and run:
 ```
 javac Main.java
-javac year[number of year]\day[number of day in two digits. e.g. 02 for day 2 or 14 for day 14]\Part[1/2].java
-java Main
+javac year[year number]\day[number of day in two digits. e.g. 02 for day 2 or 14 for day 14]\Part[1/2].java
+java Main [year number] [day] [part]
 ```
 
 
