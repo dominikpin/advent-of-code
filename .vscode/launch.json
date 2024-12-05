@@ -15,8 +15,8 @@
             "mainClass": "Main",
             "args": [
                 "2015",
-                "10",
-                "2"
+                "11",
+                "1"
             ],
             "cwd": "${workspaceFolder}"
         }
