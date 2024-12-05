@@ -21,8 +21,8 @@ public class Part1 {
     }
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2023\\day10\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         int sum = 0;
         ArrayList<String> pipes = new ArrayList<>();
         while (myReader.hasNextLine()) {

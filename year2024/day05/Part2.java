@@ -7,9 +7,9 @@ import java.util.Scanner;
 
 public class Part2 {
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2024\\day05\\input.txt");
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
         ArrayList<Page> pages = new ArrayList<>();
-        Scanner myReader = new Scanner(myObj);
+        Scanner myReader = new Scanner(inputPath);
         int correctMiddlePageSum = 0;
         while (myReader.hasNextLine()) {
             correctMiddlePageSum += parseInput(myReader.nextLine(), pages);

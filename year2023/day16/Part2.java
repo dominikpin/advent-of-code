@@ -22,8 +22,8 @@ public class Part2 {
     }
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day16\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         ArrayList<String> grid = new ArrayList<>();
         AtomicInteger max = new AtomicInteger(0);
         while (myReader.hasNextLine()) {

@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Part2 {
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day06\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         long[] timeAndDistance = { Long.parseLong(myReader.nextLine().split(":")[1].replaceAll("\\s+", "")),
                 Long.parseLong(myReader.nextLine().split(":")[1].replaceAll("\\s+", "")) };
         long sum = calculateNumberOfWays(timeAndDistance);

@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class Part2 {
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day11\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         long sum = 0;
         ArrayList<String> space = new ArrayList<>();
         while (myReader.hasNextLine()) {

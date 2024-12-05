@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Part2 {
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2024\\day02\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File("year2024\\day02\\input.txt");
+        Scanner myReader = new Scanner(inputPath);
         int safeReportsCounter = 0;
         while (myReader.hasNextLine()) {
             if (isReportSafe(myReader.nextLine(), -1))

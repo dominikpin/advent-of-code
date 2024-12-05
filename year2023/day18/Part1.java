@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Part1 {
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2023\\day18\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         ArrayList<String> lines = new ArrayList<String>();
         int[] minMaxXY = calculateGridSize(myReader, lines);
         boolean[][] grid = new boolean[minMaxXY[3] - minMaxXY[2] + 1][minMaxXY[1] - minMaxXY[0] + 1];

@@ -11,8 +11,8 @@ import java.util.Set;
 public class Part1 {
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2023\\day21\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         ArrayList<String> lines = new ArrayList<String>();
         while (myReader.hasNextLine()) {
             lines.add(myReader.nextLine());

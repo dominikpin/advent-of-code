@@ -7,9 +7,9 @@ import java.util.Scanner;
 
 public class Part2 {
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2015\\day07\\input.txt");
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
         ArrayList<Wire> wires = new ArrayList<>();
-        Scanner myReader = new Scanner(myObj);
+        Scanner myReader = new Scanner(inputPath);
         while (myReader.hasNextLine()) {
             parseInputAndMakeWires(myReader.nextLine(), wires);
         }

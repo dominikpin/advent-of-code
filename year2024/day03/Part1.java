@@ -8,8 +8,8 @@ import java.util.regex.Pattern;
 
 public class Part1 {
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2024\\day03\\test1.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File("year2024\\day03\\test1.txt");
+        Scanner myReader = new Scanner(inputPath);
         int mulSum = 0;
         while (myReader.hasNextLine()) {
             mulSum += parseInput(myReader.nextLine());

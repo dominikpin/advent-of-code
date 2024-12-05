@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Part1 {
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2015\\day01\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         String input = myReader.nextLine();
         int floorNumber = 0;
         for (int i = 0; i < input.length(); i++) {

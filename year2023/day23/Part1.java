@@ -11,8 +11,8 @@ public class Part1 {
     private static final char[] CHARS = { '>', '<', 'v', '^' };
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2023\\day23\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         ArrayList<String> map = new ArrayList<>();
         while (myReader.hasNextLine()) {
             map.add(myReader.nextLine());

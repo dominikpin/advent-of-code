@@ -9,8 +9,8 @@ public class Part1 {
     private static final String[][] possibleCubes = { { "12", "red" }, { "13", "green" }, { "14", "blue" } };
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2023\\day02\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         int sum = 0;
         int gameNum = 0;
         while (myReader.hasNextLine()) {

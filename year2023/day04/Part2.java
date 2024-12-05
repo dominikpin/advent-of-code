@@ -11,8 +11,8 @@ public class Part2 {
     private static ArrayList<Line> lines = new ArrayList<>();
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day04\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         int sum = 0;
         int counter = 0;
         while (myReader.hasNextLine()) {

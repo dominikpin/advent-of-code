@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class Part2 {
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2024\\day01\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File("year2024\\day01\\input.txt");
+        Scanner myReader = new Scanner(inputPath);
         HashMap<Integer, Integer> leftNumbers = new HashMap<>();
         HashMap<Integer, Integer> rightNumbers = new HashMap<>();
         while (myReader.hasNextInt()) {

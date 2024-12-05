@@ -13,8 +13,8 @@ public class Part2 {
     // pair", "Three of a kind", "Full house", "Four of a kind", "Five of a kind"};
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day07\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         getAllHands(myReader);
         sortHands();
         int sum = calculateWinnings();

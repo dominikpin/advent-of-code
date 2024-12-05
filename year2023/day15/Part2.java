@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Part2 {
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day15\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         String[] strings = myReader.nextLine().split(",");
         Map<Integer, ArrayList<Lens>> map = new HashMap<>();
         int sum = 0;

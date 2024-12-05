@@ -46,7 +46,6 @@ java Main
   - day01: Contains solutions for day 1.
     - Part1.java: Solution to part 1.
     - Part2.java: Solution to part 2.
-    - input.txt: Input file of the day.
     - test.txt: Short helpful input file for part 1 and 2.
     - may include some helper .java files.
   - day02: Contains solutions for Day 2.

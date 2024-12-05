@@ -1,7 +1,7 @@
-import java.io.FileNotFoundException;
+import java.io.File;
 
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         if (args.length != 3) {
             System.err.println("Wrong amount of arguments! Intended use:\njava Main [year] [day] [star]");
             System.exit(1);
@@ -11,10 +11,11 @@ public class Main {
         String formattedDay = day.length() == 1 ? "0" + day : day;
         String star = args[2];
 
-        String className = "year" + year + ".day" + formattedDay + ".Part" + star;
+        String yearPath = "year" + year;
 
         try {
-            Class<?> partClass = Class.forName(className);
+            System.setProperty("user.dir", yearPath + "/day" + formattedDay);
+            Class<?> partClass = Class.forName(yearPath + ".day" + formattedDay + ".Part" + star);
             partClass.getDeclaredConstructor().newInstance();
         } catch (ReflectiveOperationException e) {
             System.err.printf("year %s, day %s, problem %s not found.\n", year, day, star);

@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class Part2 {
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day08\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         String instructions = myReader.nextLine();
         myReader.nextLine();
         ArrayList<Node> listA = makeDataStructure(myReader);

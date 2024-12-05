@@ -9,8 +9,8 @@ import java.util.Scanner;
 public class Part1 {
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2024\\day01\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File("year2024\\day01\\input.txt");
+        Scanner myReader = new Scanner(inputPath);
         ArrayList<Integer> leftNumbers = new ArrayList<>();
         ArrayList<Integer> rightNumbers = new ArrayList<>();
         while (myReader.hasNextInt()) {

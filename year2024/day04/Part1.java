@@ -10,9 +10,9 @@ public class Part1 {
     private static final char[] LETTERS = { 'X', 'M', 'A', 'S' };
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2024\\day04\\input.txt");
+        File inputPath = new File("year2024\\day04\\input.txt");
         ArrayList<String> input = new ArrayList<>();
-        Scanner myReader = new Scanner(myObj);
+        Scanner myReader = new Scanner(inputPath);
         while (myReader.hasNextLine()) {
             input.add(myReader.nextLine());
         }

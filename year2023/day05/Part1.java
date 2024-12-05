@@ -10,8 +10,8 @@ public class Part1 {
     public static final ArrayList<ArrayList<ArrayList<Long>>> seedsToLocation = new ArrayList<>();
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2023\\day05\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         ArrayList<Long> seeds = convertStringToLongArrayList(myReader.nextLine().split(":")[1].trim().split(" "));
         analyzeAlmanac(myReader);
         myReader.close();

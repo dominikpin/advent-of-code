@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Part2 {
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day19\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         Workflow in = getWorkflows(myReader);
         int[][] intervals = { { 1, 4000 }, { 1, 4000 }, { 1, 4000 }, { 1, 4000 } };
         long sum = analyzeWorkFlows(intervals, in, 0);

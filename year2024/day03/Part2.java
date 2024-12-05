@@ -8,8 +8,8 @@ import java.util.regex.Pattern;
 
 public class Part2 {
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2024\\day03\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File("year2024\\day03\\input.txt");
+        Scanner myReader = new Scanner(inputPath);
         String line = "";
         while (myReader.hasNextLine()) {
             line += myReader.nextLine();

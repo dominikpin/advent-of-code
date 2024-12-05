@@ -10,8 +10,8 @@ import java.util.Scanner;
 
 public class Part2 {
     public Part2() throws FileNotFoundException, NoSuchAlgorithmException, UnsupportedEncodingException {
-        File myObj = new File("year2015\\day04\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         String key = myReader.nextLine();
         int i = 0;
         String hashText = "";

@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class Part1 {
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2015\\day06\\input.txt");
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
         boolean[][] lightGrid = new boolean[1000][1000];
-        Scanner myReader = new Scanner(myObj);
+        Scanner myReader = new Scanner(inputPath);
         while (myReader.hasNextLine()) {
             turnOnOffLights(lightGrid, myReader.nextLine());
         }

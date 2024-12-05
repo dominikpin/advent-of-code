@@ -10,8 +10,8 @@ public class Part1 {
     private static final int[][] DIRECTIONS = new int[][] { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2023\\day17\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         ArrayList<String> map = new ArrayList<>();
         while (myReader.hasNextLine()) {
             map.add(myReader.nextLine());

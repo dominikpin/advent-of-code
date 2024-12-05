@@ -10,9 +10,9 @@ import java.util.Set;
 public class Part2 {
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day22\\input.txt");
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
         ArrayList<String> lines = new ArrayList<String>();
-        Scanner myReader = new Scanner(myObj);
+        Scanner myReader = new Scanner(inputPath);
         while (myReader.hasNextLine()) {
             lines.add(myReader.nextLine());
         }

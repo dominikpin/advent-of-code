@@ -12,8 +12,8 @@ public class Part2 {
     private static Map<int[], Long> memoTable = new HashMap<>();
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day12\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         long sum = 0;
         while (myReader.hasNextLine()) {
             sum += analyzeString((myReader.nextLine()));

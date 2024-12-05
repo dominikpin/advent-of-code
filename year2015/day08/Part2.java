@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Part2 {
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2015\\day08\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         int stringLengthDiffSum = 0;
         while (myReader.hasNextLine()) {
             stringLengthDiffSum += analyzeLine(myReader.nextLine());

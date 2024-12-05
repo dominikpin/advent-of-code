@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class Part1 {
 
     public Part1() throws FileNotFoundException {
-        File myObj = new File("year2023\\day06\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         ArrayList<ArrayList<Integer>> timeAndDistance = new ArrayList<>();
         for (int i = 0; i < 2; i++) {
             timeAndDistance.add(stringToIntArray(myReader.nextLine().split(":")[1].trim().split(" ")));

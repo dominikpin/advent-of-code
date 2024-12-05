@@ -9,8 +9,8 @@ public class Part2 {
     private static final String[] cubeColors = { "red", "green", "blue" };
 
     public Part2() throws FileNotFoundException {
-        File myObj = new File("year2023\\day02\\input.txt");
-        Scanner myReader = new Scanner(myObj);
+        File inputPath = new File(System.getProperty("user.dir"), "input.txt");
+        Scanner myReader = new Scanner(inputPath);
         int sum = 0;
         while (myReader.hasNextLine()) {
             String data = myReader.nextLine();
