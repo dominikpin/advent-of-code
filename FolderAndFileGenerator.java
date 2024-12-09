@@ -7,8 +7,8 @@ import java.nio.file.Paths;
 
 public class FolderAndFileGenerator {
     public static void main(String[] args) throws IOException {
-        String year = "2024"; // Change year
-        String day = "6"; // Change day or leave blank for whole year
+        String year = ""; // Change year
+        String day = ""; // Change day or leave blank for whole year
         File yearDir = new File("year" + year);
         yearDir.mkdir();
         Path templatePath = Paths.get("fileTemplate");
