@@ -14,9 +14,9 @@
             "request": "launch",
             "mainClass": "Main",
             "args": [
-                "2015",
-                "11",
-                "1"
+                "2024",
+                "6",
+                "2"
             ],
             "cwd": "${workspaceFolder}"
         }

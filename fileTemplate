@@ -9,7 +9,7 @@ public class Part{part} {
     public Part{part}() throws FileNotFoundException {
         File inputPath = new File(System.getProperty("user.dir"), "input.txt");
         Scanner myReader = new Scanner(inputPath);
-        while(myReader.hasNextLine()) {
+        while (myReader.hasNextLine()) {
             myReader.nextLine();
         }
         myReader.close();
