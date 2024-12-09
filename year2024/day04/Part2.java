@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import helperFunctions.HelperFunctions;
+
 public class Part2 {
 
     public Part2() throws FileNotFoundException {
@@ -15,16 +17,8 @@ public class Part2 {
             input.add(myReader.nextLine());
         }
         myReader.close();
-        char[][] inputArray = changeInputToArray(input);
+        char[][] inputArray = HelperFunctions.changeArrayListToArray(input);
         System.out.println(findAllXMAS(inputArray));
-    }
-
-    private static char[][] changeInputToArray(ArrayList<String> input) {
-        char[][] arrayChar = new char[input.size()][input.get(0).length()];
-        for (int i = 0; i < arrayChar.length; i++) {
-            arrayChar[i] = input.get(i).toCharArray();
-        }
-        return arrayChar;
     }
 
     private static int findAllXMAS(char[][] inputArray) {

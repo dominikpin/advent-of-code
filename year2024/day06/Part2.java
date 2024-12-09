@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import helperFunctions.HelperFunctions;
+
 public class Part2 {
 
     public Part2() throws FileNotFoundException {
@@ -19,7 +21,7 @@ public class Part2 {
     }
 
     private static int numberOfPossibleObstructions(ArrayList<String> map) {
-        char[][] arrayMap = changeArrayListToArray(map);
+        char[][] arrayMap = HelperFunctions.changeArrayListToArray(map);
         int x = 0;
         int y = 0;
         char direction = ' ';
@@ -44,14 +46,6 @@ public class Part2 {
             }
         }
         return counter;
-    }
-
-    private static char[][] changeArrayListToArray(ArrayList<String> map) {
-        char[][] arrayChar = new char[map.size()][map.get(0).length()];
-        for (int i = 0; i < arrayChar.length; i++) {
-            arrayChar[i] = map.get(i).toCharArray();
-        }
-        return arrayChar;
     }
 
     private static boolean checkIfGuardIsInLoop(char direction, int x, int y, char[][] map) {
