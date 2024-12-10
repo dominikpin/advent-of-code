@@ -21,7 +21,7 @@ public class Part2 {
     }
 
     private static int numberOfPossibleObstructions(ArrayList<String> map) {
-        char[][] arrayMap = HelperFunctions.changeArrayListToArray(map);
+        char[][] arrayMap = HelperFunctions.changeArrayListToCharArray(map);
         int x = 0;
         int y = 0;
         char direction = ' ';

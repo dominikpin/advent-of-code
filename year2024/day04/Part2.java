@@ -17,7 +17,7 @@ public class Part2 {
             input.add(myReader.nextLine());
         }
         myReader.close();
-        char[][] inputArray = HelperFunctions.changeArrayListToArray(input);
+        char[][] inputArray = HelperFunctions.changeArrayListToCharArray(input);
         System.out.println(findAllXMAS(inputArray));
     }
 

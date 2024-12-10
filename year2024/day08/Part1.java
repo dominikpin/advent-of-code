@@ -18,7 +18,7 @@ public class Part1 {
             map.add(myReader.nextLine());
         }
         myReader.close();
-        System.out.println(calculateUniqueAntinodeLocations(HelperFunctions.changeArrayListToArray(map)));
+        System.out.println(calculateUniqueAntinodeLocations(HelperFunctions.changeArrayListToCharArray(map)));
     }
 
     private static int calculateUniqueAntinodeLocations(char[][] map) {
