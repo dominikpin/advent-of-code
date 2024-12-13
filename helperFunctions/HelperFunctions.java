@@ -12,12 +12,22 @@ public class HelperFunctions {
     }
 
     public static int[][] changeArrayListToIntArray(ArrayList<String> map) {
-        int[][] arrayChar = new int[map.size()][map.get(0).length()];
-        for (int i = 0; i < arrayChar.length; i++) {
-            for (int j = 0; j < arrayChar[i].length; j++) {
-                arrayChar[i][j] = map.get(i).charAt(j) - '0';
+        int[][] arrayInt = new int[map.size()][map.get(0).length()];
+        for (int i = 0; i < arrayInt.length; i++) {
+            for (int j = 0; j < arrayInt[i].length; j++) {
+                arrayInt[i][j] = map.get(i).charAt(j) - '0';
             }
         }
-        return arrayChar;
+        return arrayInt;
+    }
+
+    public static boolean[][] changeArrayListToBoolArray(ArrayList<String> map, char on) {
+        boolean[][] arrayBool = new boolean[map.size()][map.get(0).length()];
+        for (int i = 0; i < arrayBool.length; i++) {
+            for (int j = 0; j < arrayBool[i].length; j++) {
+                arrayBool[i][j] = map.get(i).charAt(j) == on;
+            }
+        }
+        return arrayBool;
     }
 }
