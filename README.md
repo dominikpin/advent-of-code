@@ -1,4 +1,4 @@
-# Advent of Code 2023 Solutions
+# Advent of Code Solutions
 
 ![Advent of Code](https://img.shields.io/badge/Advent%20of%20Code-brightgreen.svg)
 ![Language](https://img.shields.io/badge/Language-Java-blue.svg)
