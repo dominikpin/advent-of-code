@@ -30,4 +30,15 @@ public class HelperFunctions {
         }
         return arrayBool;
     }
+
+    public static String charArrayToString(char[][] array) {
+        String string = "";
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                string += array[i][j];
+            }
+            string += '\n';
+        }
+        return string;
+    }
 }
