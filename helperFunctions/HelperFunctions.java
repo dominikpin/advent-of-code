@@ -41,4 +41,17 @@ public class HelperFunctions {
         }
         return string;
     }
+
+    public static boolean doesArrayListContainIntArray(ArrayList<int[]> arrayList, int[] array,
+            int endElementExcluded) {
+        outer: for (int[] array1 : arrayList) {
+            for (int i = 0; i < endElementExcluded; i++) {
+                if (array1[i] != array[i]) {
+                    continue outer;
+                }
+            }
+            return true;
+        }
+        return false;
+    }
 }
